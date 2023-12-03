@@ -33,7 +33,7 @@ window.onload = function () {
 		"Realme.png", "Vivo.jpg", "Philips.jpg", "Mobell.jpg", "Mobiistar.jpg", "Itel.jpg",
 		"Coolpad.png", "HTC.jpg", "Motorola.jpg"
 	];
-	for (var c of company) addCompany("img/company/" + c, c.slice(0, c.length - 4));
+	
 
 	// Thêm sản phẩm vào trang
 	var sanPhamPhanTich

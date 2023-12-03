@@ -516,7 +516,7 @@ function addProduct(p, ele, returnString) {
 }
 
 // Thêm topnav vào trang
-function addTopNav() {
+/*function addTopNav() {
     document.write(`    
 	<div class="top-nav group">
         <section>
@@ -533,7 +533,7 @@ function addTopNav() {
             </ul> <!-- End Quick link -->
         </section><!-- End Section -->
     </div><!-- End Top Nav  -->`);
-}
+}*/
 
 // Thêm header
 function addHeader() {
