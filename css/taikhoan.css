@@ -8,7 +8,7 @@
   z-index: 14;
   background-color: rgba(44, 69, 88, 0.9);
   transition: .2s ease;
-  transform: scale(0);
+  transform: scale(1);
   /* ẩn đi lúc vào web */
 }
 
