@@ -22,11 +22,7 @@
 	<link rel="stylesheet" href="css/gioHang.css">
 	<link rel="stylesheet" href="css/footer.css">
 	<!-- js -->
-	<script src="data/products.js"></script>
-	<script src="js/classes.js"></script>
-	<script src="js/dungchung.js"></script>
-	<script src="js/giohang.js"></script>
-
+	
 </head>
 
 <body>
@@ -101,7 +97,37 @@
 			</div> <!-- End Content -->
 		</div> <!-- End Header -->
 
-		<table class="listSanPham" > </table>
+		<table class="listSanPham" > 
+			<tbody>
+				<tr>
+					<th>STT</th>
+					<th>Sản phẩm</th>
+					<th>Giá</th>
+					<th>Số lượng</th>
+					<th>Thành tiền</th>
+					
+					<th>Xóa</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td class="noPadding imgHide">
+						<a target="_blank" href="chitietsanpham.html" title="Xem chi tiết">
+							điện thoại
+							<img src="img/products/huawei-mate-20-pro-green-600x600.jpg">
+						</a>
+					</td>
+					<td class="alignRight">1000000</td>
+					<td class="soluong" >
+						<button ><i class="fa fa-minus"></i></button>
+						<input size="1" value=1>
+						<button ><i class="fa fa-plus"></i></button>
+					</td>
+					<td class="alignRight">1000000 ₫</td>
+					
+					<td class="noPadding"> <i class="fa fa-trash" ></i> </td>
+				</tr>
+			</tbody>
+		</table>
 		
 	</section> <!-- End Section -->
 
