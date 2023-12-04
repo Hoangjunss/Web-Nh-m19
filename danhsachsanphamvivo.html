@@ -84,12 +84,13 @@
 	
 				<div class="tools-member">
 					<div class="member">
-						<a href="login.html">
+						<a onclick="checkTaiKhoan()">
 							<i class="fa fa-user"></i>
 							Tài khoản
 						</a>
 						<div class="menuMember hide">
-							<a href="login.html">Đăng xuất</a>
+							<a href="nguoidung.html">Trang người dùng</a>
+							<a onclick="if(window.confirm('Xác nhận đăng xuất ?')) logOut();">Đăng xuất</a>
 						</div>
 	
 					</div> <!-- End Member -->
@@ -199,7 +200,7 @@
 		<!-- Mặc định mới vào trang sẽ ẩn đi, nế có filter thì mới hiện lên -->
 		<div class="contain-products" style="display:none"> 
 			<div class="filterName">
-				<input type="text" placeholder="Lọc trong trang theo tên..." >
+				<input type="text" placeholder="Lọc trong trang theo tên..." onkeyup="filterProductsName(this)">
 			</div> <!-- End FilterName -->
 
 			
@@ -213,329 +214,7 @@
 				<h3 class="tenKhung" style="background-image: linear-gradient(120deg,#ff9c00 0%,#ec1f1f 50%,#ff9c00 100% );">sản phẩm</h3>
 				<div class="listSpTrongKhung flexContain">
 					<li class="sanPham">
-						<a href="chitietsanphamapple.html">
-							<img src="img/products/ipad-air-5.jpg"alt="">
-							<h3>ipad-air-5</h3>
-							<div class="price">
-								10290000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamapple.html">
-							<img src="img/products/ipad-pro-11.jpg"alt="">
-							<h3>ipad-pro-11</h3>
-							<div class="price">
-								11920000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamsamsung.html">
-							<img src="img/products/samsung-galaxy-j4-plus-pink-400x400.jpg"alt="">
-							<h3>samsung-galaxy-j4-plus</h3>
-							<div class="price">
-								3590000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-c15.jpg"alt="">
-							<h3>realme-c15</h3>
-							<div class="price">
-								3450000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamoppo.html">
-							<img src="img/products/oppo-reno7-z-5g.jpg"alt="">
-							<h3>oppo-reno7-z</h3>
-							<div class="price">
-								9450000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamapple.html">
-							<img src="img/products/ipad-pro-m1-129.jpg"alt="">
-							<h3>ipad-pro-m1-129</h3>
-							<div class="price">
-								12890000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamoppo.html">
-							<img src="img/products/oppo-reno6.jpg"alt="">
-							<h3>oppo-reno6</h3>
-							<div class="price">
-								9250000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamHuawei.html">
-							<img src="img/products/huawei-mate-20-pro-green-600x600.jpg"alt="">
-							<h3>huawei-mate-20-pro-green-600x600</h3>
-							<div class="price">
-								100000000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamHuawei.html">
-							<img src="img/products/huawei-mate-30.jpg"alt="">
-							<h3>huawei-mate-30</h3>
-							<div class="price">
-								10590000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamHuawei.html">
-							<img src="img/products/huawei-mate-40-pro.jpg"alt="">
-							<h3>huawei-mate-40-pro</h3>
-							<div class="price">
-								17790000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamapple.html">
-							<img src="img/products/ipad-pro-m2-11.jpg"alt="">
-							<h3>ipad-pro-m2-11</h3>
-							<div class="price">
-								13290000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamsamsung.html">
-							<img src="img/products/samsung-galaxy-a8-plus-2018-gold-600x600.jpg"alt="">
-							<h3>samsung-galaxy-a8-plus</h3>
-							<div class="price">
-								4000000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamnokia.html">
-							<img src="img/products/nokia-112.jpg"alt="">
-							<h3>nokia-112</h3>
-							<div class="price">
-								890000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamnokia.html">
-							<img src="img/products/nokia-c3.jpg"alt="">
-							<h3>nokia-c3</h3>
-							<div class="price">
-								1090000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamoppo.html">
+						<a href="chitietsanpham.html">
 							<img src="img/products/vivo-v15-pro.jpg"alt="">
 							<h3>oppo-reno10</h3>
 							<div class="price">
@@ -557,6 +236,352 @@
 							</div>
 						</a>
 					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-v20-se.jpg"alt="">
+							<h3>vivo-v20-se</h3>
+							<div class="price">
+								7090000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-v21e-1.jpg"alt="">
+							<h3>vivo-v21e</h3>
+							<div class="price">
+								9000000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-V23-5G.jpg"alt="">
+							<h3>vivo-v23-5g</h3>
+							<div class="price">
+								10350000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-v29-den.jpg"alt="">
+							<h3>/vivo-v29</h3>
+							<div class="price">
+								10990000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-v29e-tim.jpg"alt="">
+							<h3>vivo-v29e</h3>
+							<div class="price">
+								11050000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-x50.jpg"alt="">
+							<h3>vivo-x50</h3>
+							<div class="price">
+								8790000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-x60-pro.jpg"alt="">
+							<h3>vivo-x60-pro</h3>
+							<div class="price">
+								10890000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+                    <li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-x80-pro.jpg"alt="">
+							<h3>vivo-x80-pro</h3>
+							<div class="price">
+								12190000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-x80-xanh.jpg"alt="">
+							<h3>vivo-x80-xanh</h3>
+							<div class="price">
+								13690000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/Vivo-y15s-2021.jpg"alt="">
+							<h3>vivo-y15s</h3>
+							<div class="price">
+								6890000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-y17-xanh.jpg"alt="">
+							<h3>vivo-y17</h3>
+							<div class="price">
+								5650000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-y21t.jpg"alt="">
+							<h3>vivo-y21t</h3>
+							<div class="price">
+								8390000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/Vivo-y31s.jpg"alt="">
+							<h3>vivo-y31s</h3>
+							<div class="price">
+								8490000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-y51.jpg"alt="">
+							<h3>vivo-y51</h3>
+							<div class="price">
+								5400000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/vivo-y81.jpg"alt="">
+							<h3>vivo-y81</h3>
+							<div class="price">
+								4000000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					
 
 				</div>
 
