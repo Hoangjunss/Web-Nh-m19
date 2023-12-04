@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Thế giới điện thoại</title>
+	
+
+	<!-- Load font awesome icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	 crossorigin="anonymous">
+
+	<!-- owl carousel libraries -->
+	<link rel="stylesheet" href="js/owlcarousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="js/owlcarousel/owl.theme.default.min.css">
+	<script src="js/Jquery/Jquery.min.js"></script>
+	<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+	<!-- tidio - live chat -->
+	<!-- <script src="//code.tidio.co/bfiiplaaohclhqwes5xivoizqkq56guu.js"></script> -->
+
+	<!-- our files -->
+	<!-- css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/topnav.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/banner.css">
+	<link rel="stylesheet" href="css/taikhoan.css">
+	<link rel="stylesheet" href="css/trangchu.css">
+	<link rel="stylesheet" href="css/home_products.css">
+	<link rel="stylesheet" href="css/pagination_phantrang.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<!-- js -->
+	<!--<script src="data/products.js"></script>
+	<script src="js/classes.js"></script>
+	<script src="js/dungchung.js"></script>
+	<script src="js/trangchu.js"></script>-->
+
+</head>
+
+<body>
+	<div class="top-nav group">
+        <section>
+            <div class="social-top-nav">
+                <a class="fa fa-facebook"></a>
+                <a class="fa fa-twitter"></a>
+                <a class="fa fa-google"></a>
+                <a class="fa fa-youtube"></a>
+            </div> <!-- End Social Topnav -->
+
+            <ul class="top-nav-quicklink flexContain">
+                <li><a href="index.html"><i class="fa fa-home"></i> Trang chủ</a></li>
+              
+            </ul> <!-- End Quick link -->
+        </section><!-- End Section -->
+    </div><!-- End Top Nav  -->
+
+	<section>
+		<div class="header group">
+			<div class="logo">
+				<a href="index.html">
+					<img src="img/logo.jpg" alt="Trang chủ Smartphone Store" title="Trang chủ Smartphone Store">
+				</a>
+			</div> <!-- End Logo -->
+	
+			<div class="content">
+				<div class="search-header" style="position: relative; left: 162px; top: 1px;">
+					<form class="input-search" method="get" action="index.html">
+						<div class="autocomplete">
+							<input id="search-box" name="search" autocomplete="off" type="text" placeholder="Nhập từ khóa tìm kiếm...">
+							<button type="submit">
+								<i class="fa fa-search"></i>
+								Tìm kiếm
+							</button>
+						</div>
+					</form> <!-- End Form search -->
+					<div class="tags">
+						<strong>Từ khóa: </strong>
+					</div>
+				</div> <!-- End Search header -->
+	
+				<div class="tools-member">
+					<div class="member">
+						<a onclick="checkTaiKhoan()">
+							<i class="fa fa-user"></i>
+							Tài khoản
+						</a>
+						<div class="menuMember hide">
+							<a href="nguoidung.html">Trang người dùng</a>
+							<a onclick="if(window.confirm('Xác nhận đăng xuất ?')) logOut();">Đăng xuất</a>
+						</div>
+	
+					</div> <!-- End Member -->
+	
+					<div class="cart">
+						<a href="giohang.html">
+							<i class="fa fa-shopping-cart"></i>
+							<span>Giỏ hàng</span>
+							<span class="cart-number"></span>
+						</a>
+					</div> <!-- End Cart -->
+	
+					<!--<div class="check-order">
+						<a>
+							<i class="fa fa-truck"></i>
+							<span>Đơn hàng</span>
+						</a>
+					</div> -->
+				</div><!-- End Tools Member -->
+			</div> <!-- End Content -->
+		</div> <!-- End Header -->
+
+		
+
+		<img src="img/banners/blackFriday.gif" alt="" style="width: 100%;">
+
+		<br>
+		<div class="companyMenu group flexContain">
+			<a href="danhsachsanphamapple.html">
+				<img src="img/company/Apple.jpg">
+			</a>
+			<a href="danhsachsanphamsamsung.html">
+				<img src="img/company/Samsung.jpg">
+			</a>
+			<a  href="danhsachsanphamoppo.html">
+				<img src="img/company/Oppo.jpg">
+			</a>
+			<a  href="danhsachsanphamnokia.html">
+				<img src="img/company/Nokia.jpg">
+			</a>
+			<a  href="danhsachsanphamHuawei.html">
+				<img src="img/company/Huawei.jpg">
+			</a>
+			<a  href="danhsachsanphamrealme.html">
+				<img src="img/company/Realme.png">
+			</a>
+			<a  href="danhsachsanphamvivo.html">
+				<img src="img/company/Vivo.jpg">
+			</a>
+			<a  href="danhsachsanphamhtc.html">
+				<img src="img/company/HTC.jpg">
+			</a>
+			
+		</div>
+
+		<div class="flexContain">
+
+			<div class="pricesRangeFilter dropdown">
+				<button class="dropbtn">Giá tiền</button>
+				<div class="dropdown-content">
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+				</div>
+			</div>
+
+			<div class="promosFilter dropdown">
+				<button class="dropbtn">Khuyến mãi</button>
+				<div class="dropdown-content">
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+				</div>
+			</div>
+
+			<div class="starFilter dropdown">
+				<button class="dropbtn">Số lượng sao</button>
+				<div class="dropdown-content">
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+				</div>
+			</div>
+
+			<div class="sortFilter dropdown">
+				<button class="dropbtn">Sắp xếp</button>
+				<div class="dropdown-content">
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+					<a href="chitietsanpham.html">0-2000000 đồng</a>
+				</div>
+			</div>
+
+		</div> <!-- End khung chọn bộ lọc -->
+
+		<!-- Những bộ lọc đã chọn -->
+		<hr>
+
+		<!-- Mặc định mới vào trang sẽ ẩn đi, nế có filter thì mới hiện lên -->
+		<div class="contain-products" style="display:none"> 
+			<div class="filterName">
+				<input type="text" placeholder="Lọc trong trang theo tên..." onkeyup="filterProductsName(this)">
+			</div> <!-- End FilterName -->
+
+			
+
+			<div class="pagination"></div>
+		</div>
+
+		<!-- Div hiển thị khung sp hot, khuyến mãi, mới ra mắt ... -->
+		<div class="contain-khungSanPham" >
+			<div class="khungSanPham" style="border-color:#42bcf4">
+				<h3 class="tenKhung" style="background-image: linear-gradient(120deg,#ff9c00 0%,#ec1f1f 50%,#ff9c00 100% );">sản phẩm</h3>
+				<div class="listSpTrongKhung flexContain">
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/HTC -Desire-12+.jpg"alt="">
+							<h3>HTC-Desire-12+</h3>
+							<div class="price">
+								4390000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-10.jpg"alt="">
+							<h3>htc-10</h3>
+							<div class="price">
+								2190000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-desire-12.jpg"alt="">
+							<h3>htc-desire-12</h3>
+							<div class="price">
+								2790000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-desire-12+.jpg"alt="">
+							<h3>htc-desire-12+</h3>
+							<div class="price">
+								2990000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-desire-19+.jpg"alt="">
+							<h3>htc-desire-19+</h3>
+							<div class="price">
+								3190000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-desire-20+.jpg"alt="">
+							<h3>htc-desire-20+</h3>
+							<div class="price">
+								3290000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/HTC-Desire-530.jpg"alt="">
+							<h3>/HTC-Desire-530</h3>
+							<div class="price">
+								1290000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-one-m8.jpg"alt="">
+							<h3>htc-one-m8</h3>
+							<div class="price">
+								3090000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+                        <a href="chitietsanpham.html">
+							<img src="img/products/htc-one-m9+.jpg"alt="">
+							<h3>htc-one-m9+</h3>
+							<div class="price">
+								3490000
+							</div>
+
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-one-m9.jpg"alt="">
+							<h3>htc-one-m9</h3>
+							<div class="price">
+								3590000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/HTC-One-Mini.jpg"alt="">
+							<h3>HTC-One-Mini</h3>
+							<div class="price">
+								990000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-one-x.jpg"alt="">
+							<h3>htc-one-x</h3>
+							<div class="price">
+								1290000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-one.jpg"alt="">
+							<h3>htc-one</h3>
+							<div class="price">
+								1150000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-u11+.jpg"alt="">
+							<h3>htc-u11+</h3>
+							<div class="price">
+								4090000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htc-u12+.jpg"alt="">
+							<h3>htc-u12+</h3>
+							<div class="price">
+								4490000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanpham.html">
+							<img src="img/products/htcdesire22+.png"alt="">
+							<h3>htcdesire22+</h3>
+							<div class="price">
+								3050000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					
+
+				</div>
+
+		</div>
+
+	</section> <!-- End Section -->
+
+	<div class="plc">
+        <section>
+            <ul class="flexContain">
+                <li>Giao hàng hỏa tốc trong 1 giờ</li>
+                <li>Thanh toán linh hoạt: tiền mặt, visa / master, trả góp</li>
+                <li>Trải nghiệm sản phẩm tại nhà</li>
+                <li>Lỗi đổi tại nhà trong 1 ngày</li>
+                <li>Hỗ trợ suốt thời gian sử dụng.
+                    <br>Hotline:
+                    <a href="tel:12345678" style="color: #288ad6;">12345678</a>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+	<div class="footer"> <!-- ============== Alert Box ============= -->
+		<div id="alert">
+			<span id="closebtn">&otimes;</span>
+		</div>
+	
+		<!-- ============== Footer ============= -->
+		<div class="copy-right">
+			<p><a href="index.html">LDD Phone Store</a> - All rights reserved © 2021 - Designed by
+				<span style="color: #eee; font-weight: bold">group 15th</span></p>
+		</div></div>
+
+	
+</body>
+
+</html>
