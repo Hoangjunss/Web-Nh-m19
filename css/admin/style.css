@@ -100,10 +100,7 @@ header h2 {
     /* 150px la width cua aside */
 }
 
-.main>div {
-    /* Mặc định ẩn mọi thứ trong main */
-    display: none;
-}
+
 
 /* ===================== HOME ================== */
 .home .canvasContainer {
