@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+	 crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/topnav.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/banner.css">
+	<link rel="stylesheet" href="css/taikhoan.css">
+	<link rel="stylesheet" href="css/trangchu.css">
+	<link rel="stylesheet" href="css/home_products.css">
+	<link rel="stylesheet" href="css/pagination_phantrang.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+    <div class="containTaikhoan">
+        
+        <div class="taikhoan">
+
+            <ul class="tab-group" style="justify-content: center; display: flex; width: 100%;">
+                <li class="tab active" style="justify-content: center; display: flex; width: 100%;"><a href="#login">ĐỊA CHỈ</a></li>
+              
+            </ul> <!-- /tab group -->
+
+            <div class="tab-content">
+                <div id="login">
+                    <h1>bạn vui lòng nhập sđ<table></table></h1>
+
+                    <form onsubmit="return logIn(this);">
+
+                        <div class="field-wrap">
+                          
+                            <input name='username' type="text" required autocomplete="off" placeholder="số điện thoại" />
+                        </div> <!-- /user name -->
+
+                        <div class="field-wrap">
+                          
+                            <input name="pass" type="password" required autocomplete="off" placeholder="địa chỉ" />
+                        </div> <!-- pass -->
+
+              
+                        <button type="submit" class="button button-block" >Tiếp tục</button>
+
+                    </form> <!-- /form -->
+
+                </div> <!-- /log in -->
+
+                <div id="signup">
+                    <h1>Đăng kí miễn phí</h1>
+
+                    <form onsubmit="return signUp(this);">
+
+                        <div class="top-row">
+                            <div class="field-wrap">
+                                <label>
+                                    Họ<span class="req">*</span>
+                                </label>
+                                <input name="ho" type="text" required autocomplete="off" />
+                            </div>
+
+                            <div class="field-wrap">
+                                <label>
+                                    Tên<span class="req">*</span>
+                                </label>
+                                <input name="ten" type="text" required autocomplete="off" />
+                            </div>
+                        </div> <!-- / ho ten -->
+
+                        <div class="field-wrap">
+                            <label>
+                                Địa chỉ Email<span class="req">*</span>
+                            </label>
+                            <input name="email" type="email" required autocomplete="off" />
+                        </div> <!-- /email -->
+
+                        <div class="field-wrap">
+                            <label>
+                                Tên đăng nhập<span class="req">*</span>
+                            </label>
+                            <input name="newUser" type="text" required autocomplete="off" />
+                        </div> <!-- /user name -->
+
+                        <div class="field-wrap">
+                            <label>
+                                Mật khẩu<span class="req">*</span>
+                            </label>
+                            <input name="newPass" type="password" required autocomplete="off" />
+                        </div> <!-- /pass -->
+
+                        <button type="submit" class="button button-block" />Tạo tài khoản</button>
+
+                    </form> <!-- /form -->
+
+                </div> <!-- /sign up -->
+            </div><!-- tab-content -->
+
+        </div> <!-- /taikhoan -->
+    </div>
+</body>
+</html>

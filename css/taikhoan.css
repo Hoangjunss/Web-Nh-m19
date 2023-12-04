@@ -101,10 +101,7 @@
   display: block;
 }
 
-.tab-content>div:last-child {
-  display: none;
-  /* ẩn signup (last-child của tab-content) lúc mới vào web */
-}
+
 
 .taikhoan h1 {
   text-align: center;
