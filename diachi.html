@@ -19,7 +19,7 @@
 </head>
 <body>
     <div class="containTaikhoan">
-        
+        <span class="close" onclick="showTaiKhoan(false);"><a href="index.html">&times;</a></span>
         <div class="taikhoan">
 
             <ul class="tab-group" style="justify-content: center; display: flex; width: 100%;">
@@ -44,59 +44,13 @@
                         </div> <!-- pass -->
 
               
-                        <button type="submit" class="button button-block" >Tiếp tục</button>
+                        <button type="submit" class="button button-block"onclick="alert('đặt hàng thành  công')" ><a href="index.html" style="color: white;">Tiếp tục</a></button>
 
                     </form> <!-- /form -->
 
                 </div> <!-- /log in -->
 
-                <div id="signup">
-                    <h1>Đăng kí miễn phí</h1>
-
-                    <form onsubmit="return signUp(this);">
-
-                        <div class="top-row">
-                            <div class="field-wrap">
-                                <label>
-                                    Họ<span class="req">*</span>
-                                </label>
-                                <input name="ho" type="text" required autocomplete="off" />
-                            </div>
-
-                            <div class="field-wrap">
-                                <label>
-                                    Tên<span class="req">*</span>
-                                </label>
-                                <input name="ten" type="text" required autocomplete="off" />
-                            </div>
-                        </div> <!-- / ho ten -->
-
-                        <div class="field-wrap">
-                            <label>
-                                Địa chỉ Email<span class="req">*</span>
-                            </label>
-                            <input name="email" type="email" required autocomplete="off" />
-                        </div> <!-- /email -->
-
-                        <div class="field-wrap">
-                            <label>
-                                Tên đăng nhập<span class="req">*</span>
-                            </label>
-                            <input name="newUser" type="text" required autocomplete="off" />
-                        </div> <!-- /user name -->
-
-                        <div class="field-wrap">
-                            <label>
-                                Mật khẩu<span class="req">*</span>
-                            </label>
-                            <input name="newPass" type="password" required autocomplete="off" />
-                        </div> <!-- /pass -->
-
-                        <button type="submit" class="button button-block" />Tạo tài khoản</button>
-
-                    </form> <!-- /form -->
-
-                </div> <!-- /sign up -->
+                
             </div><!-- tab-content -->
 
         </div> <!-- /taikhoan -->
