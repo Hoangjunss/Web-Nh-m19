@@ -89,6 +89,7 @@
 							Tài khoản
 						</a>
 						<div class="menuMember ">
+							
 							<a href="login.html">Đăng nhập</a>
 						</div>
 	
@@ -193,7 +194,7 @@
 		<!-- Mặc định mới vào trang sẽ ẩn đi, nế có filter thì mới hiện lên -->
 		<div class="contain-products" style="display:none"> 
 			<div class="filterName">
-				<input type="text" placeholder="Lọc trong trang theo tên..." >
+				<input type="text" placeholder="Lọc trong trang theo tên..." onkeyup="filterProductsName(this)">
 			</div> <!-- End FilterName -->
 
 			
@@ -207,11 +208,11 @@
 				<h3 class="tenKhung" style="background-image: linear-gradient(120deg,#ff9c00 0%,#ec1f1f 50%,#ff9c00 100% );">sản phẩm</h3>
 				<div class="listSpTrongKhung flexContain">
 					<li class="sanPham">
-						<a href="chitietsanphamrealmerealme.html">
-							<img src="img\products\realme-c53-gold-1.jpg"alt="">
-							<h3>realme-c53</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-mate-20-pro-green-600x600.jpg"alt="">
+							<h3>huawei-mate-20-pro</h3>
 							<div class="price">
-								3890000
+								6900000
 							</div>
 							
 						    <span>
@@ -230,11 +231,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-c55.jpg"alt="">
-							<h3>realme-c55</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-mate-30.jpg"alt="">
+							<h3>huawei-mate-30</h3>
 							<div class="price">
-								4900000
+								10590000
 							</div>
 							
 						    <span>
@@ -253,11 +254,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-11.jpg"alt="">
-							<h3>realme-11</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-mate-40-pro.jpg"alt="">
+							<h3>huawei-mate-40-pro</h3>
 							<div class="price">
-								7390000
+								17790000
 							</div>
 							
 						    <span>
@@ -276,11 +277,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-11-pro-plus.jpg"alt="">
-							<h3>realme-11-pro-plus</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-nova-2s.jpg"alt="">
+							<h3>huawei-nova-2s</h3>
 							<div class="price">
-								13450000
+								3190000
 							</div>
 							
 						    <span>
@@ -299,9 +300,101 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-11-pro-green.jpeg"alt="">
-							<h3>realme-11-pro</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-mate-xs-2.jpg"alt="">
+							<h3>huawei-mate-xs-2</h3>
+							<div class="price">
+								21790000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-nova-3-2-600x600.jpg"alt="">
+							<h3>huawei-nova-3</h3>
+							<div class="price">
+								7190000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-nova-5-pro.jpg"alt="">
+							<h3>huawei-nova-5-pro</h3>
+							<div class="price">
+								6490000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-nova-7.jpg"alt="">
+							<h3>huawei-nova-7</h3>
+							<div class="price">
+								7490000
+							</div>
+							
+						    <span>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+							</span>
+							<div class="tooltip">
+								<button class="themvaogio" onclick="conso()">
+									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
+									+
+								</button>
+							</div>
+						</a>
+					</li>
+					<li class="sanPham">
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-nova-11.jpg"alt="">
+							<h3>huawei-nova-11</h3>
 							<div class="price">
 								11490000
 							</div>
@@ -322,11 +415,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-10-vang.jpg"alt="">
-							<h3>realme-10</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-nova-y70-plus.jpg"alt="">
+							<h3>huawei-nova-y70-plus</h3>
 							<div class="price">
-								5300000
+								8150000
 							</div>
 							
 						    <span>
@@ -345,11 +438,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-c51-xanh.jpg"alt="">
-							<h3>realme-c51</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-p30.jpg"alt="">
+							<h3>huawei-p30</h3>
 							<div class="price">
-								2990000
+								5590000
 							</div>
 							
 						    <span>
@@ -368,11 +461,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-c30s.jpeg"alt="">
-							<h3>realme-c30s</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-p50-pocket-2.jpg"alt="">
+							<h3>huawei-p50-pocket-2</h3>
 							<div class="price">
-								2999000
+								16950000
 							</div>
 							
 						    <span>
@@ -391,11 +484,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-gt.png"alt="">
-							<h3>realme-gt</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-p60-art.jpg"alt="">
+							<h3>huawei-p60-art</h3>
 							<div class="price">
-								8290000
+								10650000
 							</div>
 							
 						    <span>
@@ -414,11 +507,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-8-pro-den.jpg"alt="">
-							<h3>realme-8-pro-den</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-p60.jpg"alt="">
+							<h3>huawei-p60</h3>
 							<div class="price">
-								5029000
+								9950000
 							</div>
 							
 						    <span>
@@ -437,103 +530,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-7-pro.jpg"alt="">
-							<h3>realme-7-pro</h3>
+						<a href="chitietsanphamHuawei.html">
+							<img src="img/products/huawei-y5-2017-300x300.jpg"alt="">
+							<h3>huawei-y5-2017</h3>
 							<div class="price">
-								3500000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-6-xanh.jpg"alt="">
-							<h3>realme-6</h3>
-							<div class="price">
-								3000000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-narzo-30.jpg"alt="">
-							<h3>realme-narzo-30</h3>
-							<div class="price">
-								10000000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-x50-pro.jpg"alt="">
-							<h3>realme-x50-pro</h3>
-							<div class="price">
-								9650000
-							</div>
-							
-						    <span>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star"></i>
-								<i class="fa fa-star-o"></i>
-							</span>
-							<div class="tooltip">
-								<button class="themvaogio" onclick="conso()">
-									<span class="tooltiptext" style="font-size: 15px;">Thêm vào giỏ</span>
-									+
-								</button>
-							</div>
-						</a>
-					</li>
-					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-xt.jpg"alt="">
-							<h3>realme-xt</h3>
-							<div class="price">
-								7500000
+								4950000
 							</div>
 							
 						    <span>
@@ -552,12 +553,13 @@
 						</a>
 					</li>
 					
+
 				</div>
 
 		</div>
-		<div class="pagination">
-			<div class="trang "><a class="tranghientai" href="index.html">1</a></div>
-			<div class="trang"><a href="index1.html">2</a></div>
+        <div class="pagination">
+			<div class="trang "><a  href="index.html">1</a></div>
+			<div class="trang"><a class="tranghientai" href="index1.html">2</a></div>
 		</div>
 
 	</section> <!-- End Section -->

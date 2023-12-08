@@ -53,7 +53,7 @@
 
             <ul class="top-nav-quicklink flexContain">
                 <li><a href="index.html"><i class="fa fa-home"></i> Trang chủ</a></li>
-				<li><a href="#" onclick="alert('bạn chưa đăng nhập')">lịch sử mua hàng</a></li>
+                <li><a href="#" onclick="alert('bạn chưa đăng nhập')">lịch sử mua hàng</a></li>
             </ul> <!-- End Quick link -->
         </section><!-- End Section -->
     </div><!-- End Top Nav  -->
@@ -89,6 +89,7 @@
 							Tài khoản
 						</a>
 						<div class="menuMember ">
+							
 							<a href="login.html">Đăng nhập</a>
 						</div>
 	
@@ -150,10 +151,11 @@
 			<div class="pricesRangeFilter dropdown">
 				<button class="dropbtn">Giá tiền</button>
 				<div class="dropdown-content">
-					<a href="#">0-2 triệu đồng</a>
-					<a href="#">2-4 triệu đồng</a>
-					<a href="#">4-10 triệu đồng</a>
-					<a href="#">10-50 triệu đồng</a>
+					<a href="#">0-2 triệu</a>
+					<a href="#">2-4 triệu</a>
+					<a href="#">4-10 triệu</a>
+					<a href="#">10-50 triệu</a>
+					
 				</div>
 			</div>
 
@@ -162,8 +164,8 @@
 				<div class="dropdown-content">
 					<a href="#">Trả Góp</a>
 					<a href="#">Giảm Giá</a>
-					<a href="#">Ưu đãi</a>
-				</div>
+					<a href="#">Ưu Đãi</a>
+									</div>
 			</div>
 
 			<div class="starFilter dropdown">
@@ -180,8 +182,9 @@
 			<div class="sortFilter dropdown">
 				<button class="dropbtn">Sắp xếp</button>
 				<div class="dropdown-content">
-					<a href="#">Giá: Thấp - cao</a>
-					<a href="#">Giá: Cao - Thấp</a>
+					<a href="#">Giá : Cao-Thấp</a>
+					<a href="#">Giá :Thấp-Cao</a>
+					
 				</div>
 			</div>
 
@@ -193,7 +196,7 @@
 		<!-- Mặc định mới vào trang sẽ ẩn đi, nế có filter thì mới hiện lên -->
 		<div class="contain-products" style="display:none"> 
 			<div class="filterName">
-				<input type="text" placeholder="Lọc trong trang theo tên..." >
+				<input type="text" placeholder="Lọc trong trang theo tên..." onkeyup="filterProductsName(this)">
 			</div> <!-- End FilterName -->
 
 			
@@ -207,11 +210,11 @@
 				<h3 class="tenKhung" style="background-image: linear-gradient(120deg,#ff9c00 0%,#ec1f1f 50%,#ff9c00 100% );">sản phẩm</h3>
 				<div class="listSpTrongKhung flexContain">
 					<li class="sanPham">
-						<a href="chitietsanphamrealmerealme.html">
-							<img src="img\products\realme-c53-gold-1.jpg"alt="">
-							<h3>realme-c53</h3>
+						<a href="chitietsanphamsamsungsamsung.html">
+							<img src="img/products/samsung-galaxy-j4-plus-pink-400x400.jpg"alt="">
+							<h3>samsung-galaxy-j4-plus</h3>
 							<div class="price">
-								3890000
+								3590000
 							</div>
 							
 						    <span>
@@ -230,11 +233,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-c55.jpg"alt="">
-							<h3>realme-c55</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-a8-plus-2018-gold-600x600.jpg"alt="">
+							<h3>samsung-galaxy-a8-plus</h3>
 							<div class="price">
-								4900000
+								4000000
 							</div>
 							
 						    <span>
@@ -253,11 +256,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-11.jpg"alt="">
-							<h3>realme-11</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-j8-600x600-600x600.jpg"alt="">
+							<h3>samsung-galaxy-j8</h3>
 							<div class="price">
-								7390000
+								2590000
 							</div>
 							
 						    <span>
@@ -276,11 +279,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-11-pro-plus.jpg"alt="">
-							<h3>realme-11-pro-plus</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-z-fold-4.jpg"alt="">
+							<h3>samsung-galaxy-z-fold-4</h3>
 							<div class="price">
-								13450000
+								23950000
 							</div>
 							
 						    <span>
@@ -299,11 +302,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-11-pro-green.jpeg"alt="">
-							<h3>realme-11-pro</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-z-flip-4.jpg"alt="">
+							<h3>samsung-galaxy-z-flip-4</h3>
 							<div class="price">
-								11490000
+								11990000
 							</div>
 							
 						    <span>
@@ -322,11 +325,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-10-vang.jpg"alt="">
-							<h3>realme-10</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-z-fold-3.jpg"alt="">
+							<h3>samsung-galaxy-z-fold-3</h3>
 							<div class="price">
-								5300000
+								20550000
 							</div>
 							
 						    <span>
@@ -345,11 +348,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-c51-xanh.jpg"alt="">
-							<h3>realme-c51</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-z-fold-2.jpg"alt="">
+							<h3>samsung-galaxy-z-fold-2</h3>
 							<div class="price">
-								2990000
+								19950000
 							</div>
 							
 						    <span>
@@ -368,11 +371,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-c30s.jpeg"alt="">
-							<h3>realme-c30s</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-a23.jpg"alt="">
+							<h3>samsung-galaxy-a23</h3>
 							<div class="price">
-								2999000
+								20790000
 							</div>
 							
 						    <span>
@@ -391,11 +394,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-gt.png"alt="">
-							<h3>realme-gt</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-a50s.jpg"alt="">
+							<h3>samsung-galaxy-a50s</h3>
 							<div class="price">
-								8290000
+								12550000
 							</div>
 							
 						    <span>
@@ -414,11 +417,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-8-pro-den.jpg"alt="">
-							<h3>realme-8-pro-den</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-a53.jpg"alt="">
+							<h3>samsung-galaxy-a53</h3>
 							<div class="price">
-								5029000
+								11390000
 							</div>
 							
 						    <span>
@@ -437,11 +440,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-7-pro.jpg"alt="">
-							<h3>realme-7-pro</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-note-10-plus.jpg"alt="">
+							<h3>samsung-galaxy-note-10-plus</h3>
 							<div class="price">
-								3500000
+								9390000
 							</div>
 							
 						    <span>
@@ -460,11 +463,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-6-xanh.jpg"alt="">
-							<h3>realme-6</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-note-20-ultra.jpg"alt="">
+							<h3>samsung-galaxy-note-20-ultra</h3>
 							<div class="price">
-								3000000
+								25980000
 							</div>
 							
 						    <span>
@@ -483,11 +486,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-narzo-30.jpg"alt="">
-							<h3>realme-narzo-30</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-s20-plus.jpg"alt="">
+							<h3>samsung-galaxy-s20-plus</h3>
 							<div class="price">
-								10000000
+								15890000
 							</div>
 							
 						    <span>
@@ -506,11 +509,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-x50-pro.jpg"alt="">
-							<h3>realme-x50-pro</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-s21.jpg"alt="">
+							<h3>samsung-galaxy-s21</h3>
 							<div class="price">
-								9650000
+								13980000
 							</div>
 							
 						    <span>
@@ -529,11 +532,11 @@
 						</a>
 					</li>
 					<li class="sanPham">
-						<a href="chitietsanphamrealme.html">
-							<img src="img\products\realme-xt.jpg"alt="">
-							<h3>realme-xt</h3>
+						<a href="chitietsanphamsamsung.html">
+							<img src="img/products/samsung-galaxy-s22-plus-green.jpg"alt="">
+							<h3>samsung-galaxy-s22-plus-green</h3>
 							<div class="price">
-								7500000
+								16900000
 							</div>
 							
 						    <span>
@@ -555,11 +558,11 @@
 				</div>
 
 		</div>
-		<div class="pagination">
-			<div class="trang "><a class="tranghientai" href="index.html">1</a></div>
-			<div class="trang"><a href="index1.html">2</a></div>
-		</div>
 
+        <div class="pagination">
+			<div class="trang "><a  href="index.html">1</a></div>
+			<div class="trang"><a class="tranghientai" href="index1.html">2</a></div>
+		</div>
 	</section> <!-- End Section -->
 
 	<div class="plc">
