@@ -118,9 +118,9 @@
 					</td>
 					<td class="alignRight">6900000</td>
 					<td class="soluong" >
-						<button ><i class="fa fa-minus"></i></button>
-						<input size="1" value=1>
-						<button ><i class="fa fa-plus"></i></button>
+						<button class="minus" ><i class="fa fa-minus"></i></button>
+						<input class="text" size="1" value=1>
+						<button class="plus" ><i class="fa fa-plus"></i></button>
 					</td>
 					<td class="alignRight">6900000 ₫</td>
 					
@@ -136,9 +136,9 @@
 					</td>
 					<td class="alignRight">12000000</td>
 					<td class="soluong" >
-						<button ><i class="fa fa-minus"></i></button>
-						<input size="1" value=1>
-						<button ><i class="fa fa-plus"></i></button>
+						<button class="minus" ><i class="fa fa-minus"></i></button>
+						<input class="text" size="1" value=1>
+						<button class="plus" ><i class="fa fa-plus"></i></button>
 					</td>
 					<td class="alignRight">12000000 ₫</td>
 					
@@ -154,9 +154,9 @@
 					</td>
 					<td class="alignRight">2590000</td>
 					<td class="soluong" >
-						<button ><i class="fa fa-minus"></i></button>
-						<input size="1" value=1>
-						<button ><i class="fa fa-plus"></i></button>
+						<button class="minus" ><i class="fa fa-minus"></i></button>
+						<input class="text" size="1" value=1>
+						<button class="plus" ><i class="fa fa-plus"></i></button>
 					</td>
 					<td class="alignRight">2590000 ₫</td>
 					
@@ -172,9 +172,9 @@
 					</td>
 					<td class="alignRight">10190000</td>
 					<td class="soluong" >
-						<button ><i class="fa fa-minus"></i></button>
-						<input size="1" value=1>
-						<button ><i class="fa fa-plus"></i></button>
+						<button class="minus" ><i class="fa fa-minus"></i></button>
+						<input class="text" size="1" value=1>
+						<button class="plus" ><i class="fa fa-plus"></i></button>
 					</td>
 					<td class="alignRight">10190000 ₫</td>
 					
@@ -238,18 +238,20 @@
 			var plus = document.getElementsByClassName('plus');
    var minus = document.getElementsByClassName('minus');
    var num = document.getElementsByClassName('num');
+   console.log(minus)
 
     for(var i=0; i<plus.length; i++){
     var buttonPlus = plus[i];
     var buttonMinus = minus[i];
     buttonPlus.addEventListener('click', function(event){
-		
+		console.log('1')
         var buttonClicked = event.target;
         var input = buttonClicked.parentElement.children[1];
         input.value=parseInt(input.value)+1;
     })
 
     buttonMinus.addEventListener('click', function(event){
+		console.log()
         var buttonClicked = event.target;
         var input = buttonClicked.parentElement.children[1];
         if(input.value>0)
