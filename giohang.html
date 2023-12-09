@@ -188,9 +188,9 @@
 					</td>
 					<td class="alignRight">6090000</td>
 					<td class="soluong" >
-						<button ><i class="fa fa-minus"></i></button>
-						<input size="1" value=1>
-						<button ><i class="fa fa-plus"></i></button>
+						<button class="minus" ><i class="fa fa-minus"></i></button>
+						<input class="text" size="1" value=1>
+						<button class="plus" ><i class="fa fa-plus"></i></button>
 					</td>
 					<td class="alignRight">6090000 ₫</td>
 					
@@ -232,6 +232,29 @@
 			<p><a href="index.html">LDD Phone Store</a> - All rights reserved © 2021 - Designed by
 				<span style="color: #eee; font-weight: bold">group 15th</span></p>
 		</div></div>
+		<script>
+			var plus = document.getElementsByClassName('plus');
+   var minus = document.getElementsByClassName('minus');
+   var num = document.getElementsByClassName('num');
+
+    for(var i=0; i<plus.length; i++){
+    var buttonPlus = plus[i];
+    var buttonMinus = minus[i];
+    buttonPlus.addEventListener('click', function(event){
+		
+        var buttonClicked = event.target;
+        var input = buttonClicked.parentElement.children[1];
+        input.value=parseInt(input.value)+1;
+    })
+
+    buttonMinus.addEventListener('click', function(event){
+        var buttonClicked = event.target;
+        var input = buttonClicked.parentElement.children[1];
+        if(input.value>0)
+            input.value=parseInt(input.value)-1;
+    })
+}
+		</script>
 </body>
 
 </html>
